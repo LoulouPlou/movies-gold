@@ -1,0 +1,6 @@
+[submodule "movies-backend"]
+	path = movies-backend
+	url = https://github.com/LoulouPlou/movies-backend.git
+[submodule "movies-frontend"]
+	path = movies-frontend
+	url = https://github.com/LoulouPlou/movies-frontend.git
