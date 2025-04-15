@@ -11,7 +11,7 @@ services:
     networks:
       - movies-network
     environment:
-      - SRPING_DATA_MONGODB_URI=mongodb://root:123456@mongodb:$27017/movie-api-db?authSource=admin
+      - SPRING_DATA_MONGODB_URI=mongodb://root:123456@mongodb:27017/movie-api-db?authSource=admin
       - SERVER_PORT=8080
   mongodb:
     image: mongo:8.0.6
