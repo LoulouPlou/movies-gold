@@ -15,6 +15,7 @@ services:
       - SERVER_PORT=8080
   mongodb:
     image: mongo:8.0.6
+    container_name: movies-mongodb
     ports:
       - "27017:27017"
     environment:
@@ -29,6 +30,7 @@ services:
     image: leiaplou/movies-frontend:v1
     build:
       context: ./movies-frontend
+    container_name: movies-frontend
     ports:
       - "80:80"
     depends_on:
